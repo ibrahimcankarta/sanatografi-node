@@ -1,4 +1,4 @@
-const socket = new WebSocket('ws://localhost:8080');
+const socket = new WebSocket('https://sanatografi-node.vercel.app/');
 
 socket.onmessage = function(event) {
     const data = JSON.parse(event.data);
